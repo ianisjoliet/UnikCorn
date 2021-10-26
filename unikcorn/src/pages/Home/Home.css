@@ -21,10 +21,9 @@
 }
 .home_unicorn{
   border: solid 1px red;
-  width: 20vw;
-  height: 60vh;
-  max-height: 550px;
-  margin-top: max(-10vh, -100px);
+  width: 30vw;
+  height: 65vh;
+  margin-top: -15vh
 }
 .home_story{
   width: 40vw;

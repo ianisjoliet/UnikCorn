@@ -12,7 +12,7 @@ function Navbar() {
 
         <div className="navbar">
             <div className="navbar-container container">
-                <li className="nav-item">
+                <li className="nav-logo">
                     <Rlink to='/' className='nav-links'>
                         UnikCorn
                     </Rlink>
