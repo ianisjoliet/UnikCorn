@@ -59,7 +59,7 @@ function Navbar() {
                             smooth={true}
                             offset={0}
                             duration={500}>
-                            team
+                            Team
                         </Link>
                     </li>
                     <li className="nav-item">
@@ -80,4 +80,3 @@ function Navbar() {
 }
 
 export default Navbar
-

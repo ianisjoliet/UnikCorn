@@ -1,5 +1,6 @@
 .navbar {
-    background: #1c2237;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fefefe;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -7,6 +8,7 @@
     font-size: 1.2rem;
     position: sticky;
     top: 0;
+    color: #444;
     z-index: 999;
   }
 
@@ -15,7 +17,7 @@
     justify-content: space-between;
     height: 80px;
   }
-  
+
   .container {
     z-index: 1;
     width: 100%;
@@ -33,18 +35,22 @@
     list-style: none;
     text-align: center;
   }
-  
+
   .nav-item {
-    height: 80px;
+    height: 50px;
     border-bottom: 2px solid transparent;
+    cursor: pointer;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
   }
-  
+
   .nav-item:hover {
     border-bottom: 2px solid #f00946;
+    transition: 0.2s;
   }
-  
+
   .nav-links {
-    color: #fff;
+    color: #444;
     display: flex;
     align-items: center;
     text-decoration: none;
