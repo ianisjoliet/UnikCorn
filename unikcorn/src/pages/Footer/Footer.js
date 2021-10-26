@@ -1,123 +1,41 @@
 import React from 'react';
 import './Footer.css'
-import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn } from "mdbreact";
+import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn } from "mdbreact";
 
 function Footer() {
-    return (
-        <div className="footer_section">
-    <MDBCard className="my-5 px-5 pb-5 text-center">
-        <MDBCardBody>
-          <h2 className="h1-responsive font-weight-bold my-5">
-            Our amazing team
-          </h2>
-          <p className="grey-text w-responsive mx-auto mb-5">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-            error amet numquam iure provident voluptate esse quasi, veritatis
-            totam voluptas nostrum quisquam eum porro a pariatur veniam.
-          </p>
-          <MDBRow>
-            <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-              <img
-                tag="img"
-                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
-                className="rounded-circle z-depth-1 img-fluid"
-                alt="Sample avatar"
-              />
-              <h5 className="font-weight-bold mt-4 mb-3">Anna Williams</h5>
-              <p className="text-uppercase blue-text">Graphic designer</p>
-              <p className="grey-text">
-                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                consectetur, adipisci sed quia non numquam modi tempora eius.
-              </p>
-              <ul className="list-unstyled mb-0">
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="facebook-f" className="blue-text" />
-                </a>
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="twitter" className="blue-text" />
-                </a>
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="instagram" className="blue-text" />
-                </a>
-              </ul>
-            </MDBCol>
-
-            <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-              <img
-                tag="img"
-                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg"
-                className="rounded-circle z-depth-1 img-fluid"
-                alt="Sample avatar"
-              />
-              <h5 className="font-weight-bold mt-4 mb-3">John Doe</h5>
-              <p className="text-uppercase blue-text">Web Developer</p>
-              <p className="grey-text">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                ipsa accusantium doloremque rem laudantium totam aperiam.
-              </p>
-              <ul className="list-unstyled mb-0">
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="facebook-f" className="blue-text" />
-                </a>
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="instagram" className="blue-text" />
-                </a>
-              </ul>
-            </MDBCol>
-
-            <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-              <img
-                tag="img"
-                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
-                className="rounded-circle z-depth-1 img-fluid"
-                alt="Sample avatar"
-              />
-              <h5 className="font-weight-bold mt-4 mb-3">Maria Smith</h5>
-              <p className="text-uppercase blue-text">Photographer</p>
-              <p className="grey-text">
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim est fugiat nulla id eu laborum.
-              </p>
-              <ul className="list-unstyled mb-0">
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="facebook-f" className="blue-text" />
-                </a>
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="instagram" className="blue-text" />
-                </a>
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="dribbble" className="blue-text" />
-                </a>
-              </ul>
-            </MDBCol>
-
-            <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-              <img
-                tag="img"
-                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg"
-                className="rounded-circle z-depth-1 img-fluid"
-                alt="Sample avatar"
-              />
-              <h5 className="font-weight-bold mt-4 mb-3">Tom Adams</h5>
-              <p className="text-uppercase blue-text">Backend Developer</p>
-              <p className="grey-text">
-                Perspiciatis repellendus ad odit consequuntur, eveniet earum
-                nisi qui consectetur totam officia voluptates perferendis
-                voluptatibus aut.
-              </p>
-              <ul className="list-unstyled mb-0">
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="facebook-f" className="blue-text" />
-                </a>
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="github" className="blue-text" />
-                </a>
-              </ul>
-            </MDBCol>
-          </MDBRow>
-        </MDBCardBody>
-      </MDBCard>
+  return (
+    <div className="footer_section">
+      <div className="footer_grid">
+        <div className="column-section">
+          <div className="footer_container">
+            <div className="team-heading">UnikCorn Team</div>
+            <div className="team-wrapper">
+              <div className="team-block">
+                <img src="images/cat.png" loading="lazy" alt="" className="team-image" />
+                <div className="pseudo">
+                  <text cla>Nearyuk</text>
+                </div>
+                <div className="description">Developer</div>
+              </div>
+              <div className="team-block">
+                <img src="images/cat.png" loading="lazy" alt="" className="team-image" />
+                <div className="pseudo">
+                  <text cla>slash4u</text>
+                </div>
+                <div className="team-description">Artist</div>
+              </div>
+              <div className="team-block">
+                <img src="images/cat.png" loading="lazy" alt="" className="team-image" />
+                <div className="pseudo">
+                  <text cla>Hely</text>
+                </div>
+                <div className="description">Marketing</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
   );
 }
 
