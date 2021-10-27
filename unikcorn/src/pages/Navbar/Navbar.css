@@ -1,16 +1,24 @@
 .navbar {
     font-family: 'Poppins', sans-serif;
-    background-color: #fefefe;
+    background: transparent;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
+    position: fixed;
     top: 0;
     color: #444;
     z-index: 999;
   }
+
+  .navbar.active {
+    background: rgba(107, 174, 173, 0.7);
+  }
+
+  .nav-item >.active {
+    border-bottom: 2px solid #f00946;
+}
 
   .navbar-container {
     display: flex;

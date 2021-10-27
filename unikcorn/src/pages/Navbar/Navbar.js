@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from "react-scroll";
 import { Link as Rlink } from 'react-router-dom'
 import './Navbar.css'
@@ -8,9 +8,20 @@ import { AppBar, Toolbar, Typography, Button, IconButton, MenuIcon } from '@mate
 
 
 function Navbar() {
+
+    const [navbar, setNavbar] = useState(false)
+    const changeBakground = () => {
+        if (window.scrollY >= 80) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
+    }
+    window.addEventListener('scroll', changeBakground);
+
     return (
 
-        <div className="navbar">
+        <div className={navbar ? 'navbar active' : 'navbar'}>
             <div className="navbar-container container">
                 <li className="nav-logo">
                     <Rlink to='/' className='nav-links'>

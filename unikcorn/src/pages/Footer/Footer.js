@@ -4,7 +4,7 @@ import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn } from "mdbreact"
 
 function Footer() {
   return (
-    <div className="footer_section">
+    <div className="footer_section" id="footer">
       <div className="footer_grid">
         <div className="column-section">
           <div className="footer_container">
