@@ -34,11 +34,11 @@ const data = {
 
 const styles = {
     rowContentPaddingTop: '100',
-    bgColor: 'black',
-    titleTextColor: "white",
-    rowTitleColor: "white",
-    rowContentColor: 'grey',
-    arrowColor: "red",
+    bgColor: 'transparent',
+    titleTextColor: "#FFF",
+    rowTitleColor: "#444",
+    rowContentColor: '#444',
+    arrowColor: "#222",
 };
 
 const config = {

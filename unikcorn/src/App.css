@@ -1,13 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,400&display=swap');
 
-*{
-  margin: 0;
-  box-sizing: border-box;
-}
-a{
-  color: #000;
-  text-decoration: none
-}
 .App {
   text-align: center;
 }
@@ -15,6 +6,11 @@ a{
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+*{
+  margin: 0;
+  box-sizing: border-box;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -45,4 +41,8 @@ a{
   to {
     transform: rotate(360deg);
   }
+}
+
+body{
+  background-image: linear-gradient(to top, #cc6b8e 20%, #f18271 40%, #f3a469 50%, #fcb69f 70%, #ffecd2 100%);
 }

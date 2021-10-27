@@ -73,10 +73,10 @@ function Roadmap() {
 
     return (
         <div className="roadmap_section" id="roadmap">
-            <h1>Our Roadmapp</h1>
+            <h1 className='roadmap_title'>Our Roadmapp</h1>
             <TimelineObserver
-                initialColor="#e5e5e5"
-                fillColor="black"
+                initialColor="#fefefe"
+                fillColor="#555"
                 handleObserve={(setObserver) => (
                     <Timeline
                         callback={onCallback}

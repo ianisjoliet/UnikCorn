@@ -1,50 +1,72 @@
 .roadmap_section {
-    height: 100vh;
-    background-image: linear-gradient(to top, #cc6b8e 20%, #f18271 40%, #f3a469 50%, #fcb69f 70%, #ffecd2 100%);
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
 }
 
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .timeline {
-    height: 300px;
-    width: 5px;
-    background-color: #e5e5e5;
-  }
-  
-  .stub1 {
-    line-height: 300px;
-    font-size: 24px;
-    background-color: #eae4e4;
-  }
-  
-  .stub2 {
-    height: 1000px;
-  }
-  
-  .circle {
-    width: 30px;
-    height: 30px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    border-radius: 50%;
-    background-color: #e5e5e5;
-  }
-  
-  .circleWrapper {
-    position: relative;
-  }
-  
-  .message {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    min-width: 150px;
-    font-weight: bold;
-  }
-  
+.roadmap_title{
+  color: #222;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+  font-size: 6vh;
+  line-height: 7vh;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
+  letter-spacing: 2px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline {
+  height: 300px;
+  width: 5px;
+  background-color: #fefefe;
+}
+
+.stub1 {
+  line-height: 300px;
+  font-size: 24px;
+  background-color: #555;
+}
+
+.stub2 {
+  min-height: 150px;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  font-weight: 600;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fefefe!important;
+  border: solid 2px #555;
+  color: #777;
+  border-radius: 50%;
+}
+
+.circleWrapper {
+  position: relative;
+}
+
+.message {
+  display: inline-block;
+  position: absolute;
+  top: 0vh;
+  left: max(5vw, 50px);
+  min-width: 200px;
+  width: 30vw;
+  min-height: 15vh;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 600;
+  color: #444;
+  background-color: #FFF;
+}

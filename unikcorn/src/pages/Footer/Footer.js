@@ -11,21 +11,27 @@ function Footer() {
             <div className="team-heading">UnikCorn Team</div>
             <div className="team-wrapper">
               <div className="team-block">
-                <img src="images/cat.png" loading="lazy" alt="" className="team-image" />
+                <div className='team-image-border'>
+                  <img src="images/cat.png" loading="lazy" alt="" className="team-image" />
+                </div>
                 <div className="pseudo">
                   <text cla>Nearyuk</text>
                 </div>
                 <div className="description">Developer</div>
               </div>
               <div className="team-block">
-                <img src="images/cat.png" loading="lazy" alt="" className="team-image" />
+                <div className='team-image-border'>
+                  <img src="images/cat.png" loading="lazy" alt="" className="team-image" />
+                </div>
                 <div className="pseudo">
                   <text cla>slash4u</text>
                 </div>
-                <div className="team-description">Artist</div>
+                <div className="description">Artist</div>
               </div>
               <div className="team-block">
-                <img src="images/cat.png" loading="lazy" alt="" className="team-image" />
+              <div className='team-image-border'>
+                  <img src="images/cat.png" loading="lazy" alt="" className="team-image" />
+                </div>
                 <div className="pseudo">
                   <text cla>Hely</text>
                 </div>
