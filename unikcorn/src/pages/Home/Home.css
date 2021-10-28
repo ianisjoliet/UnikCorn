@@ -32,7 +32,7 @@
   margin-top: min(-12vh, -50px);
   margin-right: 5vw;
 }
-.home_title{
+.home_logo{
   display: inline-block;
   text-align: center;
   font-weight: 800;
@@ -44,7 +44,7 @@
   color: #444;
   width: 100%;
 }
-.home_description{
+.home_details{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,6 +55,17 @@
   box-shadow: 0px 0px 5px #AAA;
   border-radius: 5px;
   min-height: 400px;
+}
+
+.home_heading {
+  position: sticky;
+  margin-top: 0px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1vw;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: 3s linear 1s infinite alternate slidein;
 }
 
 /* Responsive */
@@ -72,7 +83,7 @@
     margin-top: min(-12vh, -50px);
     margin-right: 5vw;
   }
-  .home_title{
+  .home_logo{
     width: 121%;
     margin-left: -21%;
   }

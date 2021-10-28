@@ -56,7 +56,9 @@
   margin-right: 0.5vw;
   letter-spacing: 1px;
   font-weight: 600;
+  list-style: none;
 }
+
 .nav-logo:hover .nav-links {
   color: #444;
   transition: 0.2s;
@@ -72,11 +74,8 @@
   font-weight: 600;
 }
 
-.nav-item:hover {
-  height: 50px;
-  border-bottom: 2px solid #f00946;
-  transition: 0.2s;
-}
+
+
 .nav-item:hover .nav-links {
   color: #444;
   transition: 0.2s;
@@ -88,4 +87,13 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
+  list-style: none;
+}
+
+.nav-img {
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  list-style: none;
 }

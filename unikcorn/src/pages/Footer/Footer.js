@@ -46,13 +46,3 @@ function Footer() {
 }
 
 export default Footer
-
-//<div className="footer_section" id="footer">
- //           <div className="footer_containers">
-  //              <div className="footer_title">TEAM</div>
- //               <div className="footer_team">
- //                   <div className="footer_img"></div>
- //                   <div className="footer_desc"></div>
- //               </div>
- //           </div>
- //       </div>

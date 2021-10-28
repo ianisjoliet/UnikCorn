@@ -2,10 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { Link } from "react-scroll";
 import { Link as Rlink } from 'react-router-dom'
 import './Navbar.css'
-import { makeStyles } from '@material-ui/core'
-import { AppBar, Toolbar, Typography, Button, IconButton, MenuIcon } from '@material-ui/core'
-
-
 
 function Navbar() {
 
@@ -24,22 +20,17 @@ function Navbar() {
         <div className={navbar ? 'navbar active' : 'navbar'}>
             <div className="navbar-container container">
                 <li className="nav-logo">
-                    <Rlink to='/' className='nav-links'>
+                    <Link to='home' className='nav-links'
+                        activeClass="active"
+                        to="roadmap"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}>
                         UnikCorn
-                    </Rlink>
+                    </Link>
                 </li>
                 <ul className='nav-menu'>
-                    <li className="nav-item">
-                        <Link className='nav-links'
-                            activeClass="active"
-                            to="home"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={500}>
-                            Home
-                        </Link>
-                    </li>
                     <li className="nav-item">
                         <Link className='nav-links'
                             activeClass="active"
@@ -73,20 +64,19 @@ function Navbar() {
                             Team
                         </Link>
                     </li>
-                    <li className="nav-item">
-                        <Rlink to='discord' className='nav-links'>
-                            Discord
+                    <li className="nav-logo">
+                        <Rlink to={{ pathname: "https://discord.gg/CKPgdNcqRM" }} className="nav-links" target="_blank" >
+                            <img src="images/icon_discord.png" loading="lazy" alt="" className="nav-img" />
                         </Rlink>
                     </li>
-                    <li className="nav-item">
-                        <Rlink to='twitter' className='nav-links'>
-                            Twitter
+                    <li className="nav-logo">
+                        <Rlink to={{ pathname: "https://twitter.com/UnikCornNFT" }} className="nav-links" target="_blank" >
+                            <img src="images/icon_twitter.png" loading="lazy" alt="" className="nav-img" />
                         </Rlink>
                     </li>
                 </ul>
             </div>
         </div>
-
     );
 }
 
